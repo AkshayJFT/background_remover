@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearCut - Background Removal Made Easy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ClearCut</h1>
+            <p>Effortlessly Remove Backgrounds from Your Images</p>
+            <a href="#upload" class="cta-button">Get Started</a>
+        </div>
+    </header>
+    
+
+    <section id="upload">
+        <div class="container">
+            <h2>Upload Your Image</h2>
+            <div class="upload-container">
+                <div class="image-preview" id="imagePreview">
+                    <img id="uploadedImage" src="#" alt="Uploaded Image" style="display: none;">
+                    <span id="imageText">Image Preview</span>
+                </div>
+                <div class="upload-form-container">
+                    <form id="uploadForm">
+                        <label for="fileInput" class="file-input-label">
+                            <span>Choose Image</span>
+                            <input type="file" id="fileInput" name="file" accept="image/*" required>
+                        </label>
+                        <button type="submit" class="upload-button">Remove Background</button>
+                    </form>
+                </div>
+                <div class="image-preview" id="processedImagePreview">
+                    <img id="processedImage" src="#" alt="Processed Image" style="display: none;">
+                    <span id="processedImageText">Processed Image</span>
+                </div>
+            </div>
+            <div id="downloadSection" style="display: none;">
+                <a id="downloadButton" href="#" download="processed_image.png" class="download-button">Download Processed Image</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ClearCut. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
